@@ -14,3 +14,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy to your project.
+
+  # 添加调用可重用工作流的作业
+  call-reusable-workflow:
+    uses: ./.github/workflows/reusable-workflow.yml
+    with:
+      node: 14
